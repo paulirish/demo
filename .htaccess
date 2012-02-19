@@ -1,0 +1,3 @@
+RewriteEngine On
+
+RewriteRule ^([^\.\\\/]+)$ ?p=$1 [NC]
