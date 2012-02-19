@@ -1,0 +1,180 @@
+/* -------- Base -------- */
+
+body {
+	background: #FFF url(../images/body_bg.png) repeat-x;
+}
+
+body.blue {
+	background: #FFF url(../images/blue/body_bg.png) repeat-x;
+}
+
+body.green {
+	background: #FFF url(../images/green/body_bg.png) repeat-x;
+}
+
+/* -------- Wrapper -------- */
+
+#wrapper {
+	background: url(../images/wrapper_bg.png);
+	margin: 0 auto;
+	position: relative;
+	width: 958px;
+}
+
+.blue #wrapper {
+	background: url(../images/blue/wrapper_bg.png);
+}
+
+.green #wrapper {
+	background: url(../images/green/wrapper_bg.png);
+}
+
+/* -------- Banner -------- */
+
+#banner {
+	background: url(../images/banner_bg.png);
+	height: 314px;
+	margin-bottom: -210px;
+}
+
+.blue #banner {
+	background: url(../images/blue/banner_bg.png);
+}
+
+.green #banner {
+	background: url(../images/green/banner_bg.png);
+}
+
+/* -------- Logo -------- */
+
+.logo {
+	font-size: 48px;
+	padding: 50px 10px 0;
+}
+
+.logo a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+/* -------- Navigation -------- */
+
+#navigation {
+	font-size: 14px;
+	position: absolute;
+	right: 0;
+	top: 50px;
+}
+
+#navigation ul {
+	padding: 0;
+}
+
+#navigation li {
+	float: left;
+	list-style-type: none;
+	margin: 0 10px;
+}
+
+#navigation a {
+	color: #FFF;
+	display: block;
+	float: left;
+	padding: 2.5px 10px;
+	text-decoration: none;
+}
+
+#navigation a:hover {
+	color: #FFA;
+}
+
+#navigation a.selected {
+	border-bottom: 2px solid #EEE;
+}
+
+/* -------- Content-Wrapper -------- */
+
+#content-wrapper {
+	color: #333;
+	font: 11px Verdana, Tahoma, Arial, sans-serif;
+	min-height: 100px;
+	padding: 30px;
+}
+
+#content-wrapper a {
+	color: #00F;
+	text-decoration: none;
+}
+
+#content-wrapper a:hover {
+	text-decoration: underline;
+}
+
+#content {
+	background: #FFF;
+}
+
+/* -------- Footer -------- */
+
+#footer {
+	background: url(../images/footer_bg.png) no-repeat bottom;
+	height: 35px;
+	padding: 0 20px;
+	text-align: right;
+}
+
+.blue #footer {
+	background: url(../images/blue/footer_bg.png) no-repeat bottom;
+}
+
+.green #footer {
+	background: url(../images/green/footer_bg.png) no-repeat bottom;
+}
+
+/* -------- Sub-Navigation -------- */
+
+#sub-navigation {
+	background: #FFF;
+	height: 30px;
+}
+
+#navigation-breadcrumb {
+	float: left;
+}
+
+#navigation-children {
+	float: right;
+}
+
+#navigation-children ul {
+	float: right;
+	padding: 0;
+}
+
+#navigation-children li {
+	float: left;
+	list-style-type: none;
+}
+
+#navigation-children a.selected {
+	text-decoration: underline;
+}
+
+/* -------- Color Schemes -------- */
+
+#color-schemes ul {
+	height: 2.5em;
+	padding: 0;
+}
+
+#color-schemes li {
+	float: left;
+	line-height: 1.5em;
+	list-style-type: none;
+	margin: 0;
+	padding: 0 1em 0 0;
+}
+
+#color-schemes a.selected {
+	text-decoration: underline;
+}

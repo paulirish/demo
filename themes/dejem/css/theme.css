@@ -1,0 +1,162 @@
+/* -------- Base -------- */
+
+body {
+	background: #D0CCC8;
+}
+
+/* -------- Wrapper -------- */
+
+#wrapper {
+	background: url(../images/wrapper_bg.png);
+	margin: 0 auto;
+	width: 880px;
+}
+
+/* -------- Banner -------- */
+
+#banner {
+	background: #261C1C url(../images/banner_bg.png);
+	height: 67px;
+	line-height: 60px;
+	overflow: hidden;
+	padding: 0 25px;
+}
+
+/* -------- Logo -------- */
+
+.logo a {
+	color: #FFF;
+	font-size: 28px;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+/* -------- Navigation -------- */
+
+#navigation {
+	background: #261C1C url(../images/banner_bg.png) bottom;
+	font-size: 14px;
+	height: 53px;
+	line-height: 30px;
+	padding: 0 10px;
+}
+
+#navigation ul {
+	padding: 0;
+}
+
+#navigation li {
+	list-style-type: none;
+	margin: 0;
+}
+
+#navigation li,
+#navigation-breadcrumb li,
+#navigation-children li {
+	float: left;
+}
+
+#navigation a {
+	color: #CCC7C2;
+	display: block;
+	float: left;
+	padding: 0 15px;
+	text-decoration: none;
+}
+
+#navigation a:hover {
+	color: #E5E0DA;
+}
+
+#navigation a.selected {
+	color: #FFF;
+}
+
+/* -------- Content-Wrapper -------- */
+
+#content-wrapper {
+	color: #4D4741;
+	font: 11px/1.5 tahoma, arial, verdana, sans-serif;
+	padding: 0 25px;
+}
+
+#content-wrapper a {
+	color: #4D4741;
+	text-decoration: none;
+}
+
+#content-wrapper a:hover {
+	color: #261C1C;
+	text-decoration: underline;
+}
+
+/* -------- Sub-Navigation -------- */
+
+#sub-navigation {
+	border-bottom: 2px solid #EEE;
+	height: 25px;
+	margin-bottom: 10px;
+}
+
+#sub-navigation li {
+	list-style-type: none;
+	margin: 0;
+}
+
+#navigation-breadcrumb,
+#navigation-breadcrumb ul {
+	float: left;
+}
+
+#navigation-children,
+#navigation-children ul {
+	float: right;
+}
+
+#navigation-children ul {
+	margin: 0 -10px;
+	padding: 0;
+}
+
+#navigation-children a {
+	display: block;
+	float: left;
+	margin: 0 10px;
+}
+
+#navigation-children a.selected {
+	text-decoration: underline;
+}
+
+/* -------- Footer -------- */
+
+#footer {
+	background: url(../images/footer_bg.png);
+	color: #CCC7C2;
+	height: 56px;
+	line-height: 56px;
+	padding: 26px 0 9px;
+	text-align: center;
+}
+
+#footer a {
+	color: #CCC7C2;
+}
+
+/* -------- Color Schemes -------- */
+
+#color-schemes ul {
+	height: 2.5em;
+	padding: 0;
+}
+
+#color-schemes li {
+	float: left;
+	line-height: 1.5em;
+	list-style-type: none;
+	padding: 0 1em 0 0;
+}
+
+#color-schemes a.selected {
+	text-decoration: underline;
+}

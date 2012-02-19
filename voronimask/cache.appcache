@@ -1,0 +1,27 @@
+CACHE MANIFEST
+
+#version 1.0 8-4-2011
+
+CACHE:
+
+#images
+
+
+#internal HTML documents
+
+
+#style sheets
+http://paulirish.com/demo/voronimask/voroboids.css
+
+#style sheet images
+
+
+#javascript files
+http://paulirish.com/demo/voronimask/d3.js
+http://paulirish.com/demo/voronimask/d3.geom.js
+http://paulirish.com/demo/voronimask/boid.js
+http://paulirish.com/demo/voronimask/voroboids.js
+http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js
+
+NETWORK:
+*

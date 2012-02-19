@@ -1,0 +1,19 @@
+/* -------- Website -------- */
+
+name:  demos...
+theme: cleap
+404: missing.html
+
+/* -------- Sitemap -------- */
+
+Home
+Idle Timer
+Fail Blog Pipe
+CSS Hacks
+log()
+Resize
+Infscr
+Annotate
+Invert
+Multi
+Inline SVG

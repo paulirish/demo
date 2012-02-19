@@ -1,0 +1,156 @@
+/* -------- Base -------- */
+
+html {
+	background: #E6E2CF url(../images/html_bg.png) repeat-y 50% 0;
+}
+
+body {
+	background: url(../images/body_bg.png) repeat-x;
+}
+
+/* -------- Wrapper -------- */
+
+#wrapper {
+	margin: 0 auto;
+	overflow: hidden;
+	width: 880px;
+}
+
+/* -------- Banner -------- */
+
+#banner {
+	height: 199px;
+	margin: 40px 0 0;
+	overflow: hidden;
+}
+
+/* -------- Logo -------- */
+
+.logo {
+	font-size: 48px;
+	line-height: 199px;
+	text-align: center;
+}
+
+.logo a {
+	color: #333;
+	text-decoration: none;
+}
+
+/* -------- Navigation -------- */
+
+#navigation {
+	height: 40px;
+	position: absolute;
+	top: 0;
+}
+
+#navigation ul {
+	float: left;
+	padding: 0;
+}
+
+#navigation li {
+	list-style-type: none;
+}
+
+#navigation li,
+#navigation-breadcrumb li,
+#navigation-children li {
+	float: left;
+}
+
+#navigation a {
+	color: #666;
+	font: 12px/40px "Lucida Grande", Verdana, Arial, sans-serif;
+	text-decoration: none;
+}
+
+#navigation a:hover {
+	color: #000;
+}
+
+#navigation a.selected {
+	color: #222;
+}
+
+/* -------- Content-Wrapper -------- */
+
+#content-wrapper {
+	background: url(../images/content-wrapper_bg.png) no-repeat -0.5px 0;
+	color: #333;
+	font: 10px "Lucida Grande", Verdana, Arial, sans-serif;
+	padding: 10px 20px;
+	width: 840px;
+}
+
+#content-wrapper a {
+	color: #000;
+	text-decoration: none;
+}
+
+#content-wrapper a:hover {
+	color: #0A37BF;
+	text-decoration: underline;
+}
+
+/* -------- Footer -------- */
+
+#footer {
+	padding: 10px 20px;
+}
+
+/* -------- Sub-Navigation -------- */
+
+#sub-navigation {
+	height: 25px;
+	margin-bottom: 10px;
+}
+
+#sub-navigation li {
+	list-style-type: none;
+	margin: 0;
+}
+
+#navigation-breadcrumb,
+#navigation-breadcrumb ul {
+	float: left;
+}
+
+#navigation-children,
+#navigation-children ul {
+	float: right;
+}
+
+#navigation-children ul {
+	margin: 0 -10px;
+	padding: 0;
+}
+
+#navigation-children a {
+	display: block;
+	float: left;
+	margin: 0 10px;
+}
+
+#navigation-children a.selected {
+	text-decoration: underline;
+}
+
+/* -------- Color Schemes -------- */
+
+#color-schemes ul {
+	height: 2.5em;
+	padding: 0;
+}
+
+#color-schemes li {
+	float: left;
+	line-height: 1.5em;
+	list-style-type: none;
+	padding: 0 1em 0 0;
+}
+
+#color-schemes a.selected {
+	text-decoration: underline;
+}

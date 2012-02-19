@@ -1,0 +1,85 @@
+/* --------------------------------
+	Cimus CSS Reset v1.1
+	FF IE6 IE7 Safari Chrome Opera
+	Jonathan Neal
+	jneal@liferay.com
+	03-30-2009
+--------------------------------*/
+
+a {
+	outline: none;
+}
+
+abbr {
+	border-bottom: 1px dotted #000;
+	border-bottom-color: inherit;
+}
+
+body,
+dl,
+form,
+ol,
+pre,
+td,
+th,
+ul {
+	margin: 0;
+}
+
+body {
+	font: 62.5% Arial, Helvetica, sans-serif;
+	line-height: 1.5;
+}
+
+code,
+pre {
+	font: 90% Courier New, Courier, monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+	margin: 0;
+	padding: 0 0 1em;
+}
+
+html {
+	overflow-y: scroll;
+}
+
+img {
+	border: 0;
+	vertical-align: bottom;
+}
+
+li {
+	margin: 0 2em;
+}
+
+ol,
+ul {
+	padding: 0 1em;
+}
+
+p {
+	margin: 0;
+	padding: 0 0 1em;
+}
+
+q:before,
+q:after {
+	content: '';
+}
+
+sub,
+sup {
+	line-height: 0;
+}
+
+table {
+	border-collapse: collapse;
+}

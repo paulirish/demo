@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<title>happy boids. in svg with a mask.</title>
+<meta charset=utf-8>
+
+<html manifest=cache.appcache>
+
+<link rel="stylesheet" href="voroboids.css"/>
+<script src="d3.js"></script>
+<script src="d3.geom.js"></script>
+
+<div id="vis">
+ 
+  
+</div>
+
+ 
+  <svg width="640" height="480" style="position:absolute; top: -999em;" id="mymask">
+     <title>made with svg edit cuz its awesssssssome.</title>
+     <defs>
+      <clipPath id="textt">
+      
+      <text xml:space="preserve" text-anchor="middle" font-family="Impact" font-size="228" id="svg_1" y="177.34783" x="467" stroke-width="0" stroke="#000000" fill="#000000" >VORONI</text>
+      <text xml:space="preserve" text-anchor="middle" font-family="Impact" font-size="228" id="svg_2" y="341"       x="466" stroke-width="0" stroke="#000000" fill="#000000">BOIDS</text>
+      <text xml:space="preserve" text-anchor="middle" font-family="Impact" font-size="228" id="svg_3" y="506"       x="458" stroke-width="0" stroke="#000000" fill="#000000">MASKED!</text>
+      
+      </clipPath>
+    </defs>
+  
+  </svg>
+  
+  
+  
+  
+<script src="boid.js"></script>
+<script src="voroboids.js"></script>
+
+<input><input><input>
+
+
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" ></script>
+	<script type="text/javascript">
+
+			$("input").keyup(function(){
+				$("svg text").eq( $(this).index('input') ).text(this.value);
+				document.querySelector('#mymask').style.position = '';
+				document.body.offsetWidth;
+        document.querySelector('#mymask').style.position = 'absolute';
+			});
+	
+		
+	</script>
+	
+
+

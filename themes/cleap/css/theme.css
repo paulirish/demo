@@ -1,0 +1,197 @@
+/* -------- Base -------- */
+
+body {
+	background: #F7F7F7 url(../images/body_bg.png) repeat-x;
+	margin: 0;
+}
+
+body.blue {
+	background: #F5F5F8 url(../images/blue/body_bg.png) repeat-x;
+}
+
+.green {
+	background: #F5F5F8 url(../images/green/body_bg.png) repeat-x;
+}
+
+/* -------- Wrapper -------- */
+
+#wrapper {
+	margin: 0 auto;
+	width: 940px;
+}
+
+/* -------- Banner -------- */
+
+#banner {
+	height: 55px;
+}
+
+/* -------- Logo -------- */
+
+.logo {
+	font-size: 32px;
+	line-height: 55px;
+	padding: 0 2px;
+}
+
+.logo a {
+	color: #333;
+	text-decoration: none;
+}
+
+/* -------- Navigation -------- */
+
+#navigation {
+	background: #CCC url(../images/navigation_bg.png);
+	font-size: 14px;
+	height: 61px;
+}
+
+.blue #navigation {
+	background: #BACBD9 url(../images/blue/navigation_bg.png);
+}
+
+.green #navigation {
+	background: #C5D6C5 url(../images/green/navigation_bg.png);
+}
+
+#navigation ul {
+	padding: 0 25px;
+}
+
+#navigation li {
+	float: left;
+	list-style-type: none;
+	margin: 0;
+}
+
+#navigation a {
+	color: #383838;
+	display: block;
+	float: left;
+	font-family: Frutiger, Frutiger Linotype, Univers, Calibri, Gill Sans, Gill Sans MT, Myriad Pro, Myriad, DejaVu Sans Condensed, Liberation Sans, Nimbus Sans L, Tahoma, Geneva, Helvetica Neue, Helvetica, Arial, sans-serif;
+	line-height: 36px;
+	padding: 0 15px;
+	text-decoration: none;
+	border-left: 1px dotted rgba(250,250,250,0.7);
+}
+
+#navigation a:hover {
+	background: url(../images/navigation_hover_bg.png);
+	color: #EEE;
+}
+
+.blue #navigation a:hover {
+	background: url(../images/blue/navigation_hover_bg.png);
+}
+
+.green #navigation a:hover {
+	background: url(../images/green/navigation_hover_bg.png);
+}
+
+#navigation a.selected {
+	background: url(../images/navigation_selected_bg.png);
+	color: #FFF;
+}
+
+.blue #navigation a.selected {
+	background: url(../images/blue/navigation_selected_bg.png);
+}
+
+.green #navigation a.selected {
+	background: url(../images/green/navigation_selected_bg.png);
+}
+
+/* -------- Content-Wrapper -------- */
+
+#content-wrapper {
+	background: #FFF url(../images/content-wrapper_bg.png);
+	color: #333;
+	font: 11px/1.5 "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
+	min-height: 100px;
+	padding: 10px;
+}
+
+#content-wrapper { font-size: 130%;}
+
+.blue #content-wrapper {
+	background: #FFF url(../images/blue/content-wrapper_bg.png);
+}
+
+.green #content-wrapper {
+	background: #FFF url(../images/green/content-wrapper_bg.png);
+}
+
+#content-wrapper a {
+	color: #000;
+	text-decoration: none;
+}
+
+#content-wrapper a {color: #08C; }
+#content-wrapper a:hover {
+	text-decoration: underline;
+}
+
+/* -------- Footer -------- */
+
+#footer {
+	background: url(../images/footer_bg.png);
+	height: 30px;
+	padding: 0 20px;
+	text-align: right;
+}
+
+.blue #footer {
+	background: url(../images/blue/footer_bg.png);
+}
+
+.green #footer {
+	background: url(../images/green/footer_bg.png);
+}
+
+/* -------- Sub-Navigation -------- */
+
+#sub-navigation {
+	height: 20px;
+}
+
+#navigation-breadcrumb {
+	float: left;
+}
+
+#navigation-children {
+	float: right;
+}
+
+#navigation-children ul {
+	float: right;
+	padding: 0;
+}
+
+#navigation-children li {
+	float: left;
+	list-style-type: none;
+}
+#navigation-breadcrumb a.current { color: #999; }
+#navigation-children a.selected {
+	text-decoration: underline;
+}
+
+/* -------- Color Schemes -------- */
+
+#color-schemes ul {
+	height: 2.5em;
+	padding: 0;
+}
+
+#color-schemes li {
+	float: left;
+	line-height: 1.5em;
+	list-style-type: none;
+	margin: 0;
+	padding: 0 1em 0 0;
+}
+
+#color-schemes a.selected {
+	text-decoration: underline;
+}

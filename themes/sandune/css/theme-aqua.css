@@ -1,0 +1,15 @@
+/* -------- Base -------- */
+
+html {
+	background: #8EDEF9 url(../images/aqua/html_bg.png) repeat-y 50% 0;
+}
+
+body {
+	background: url(../images/aqua/body_bg.png) repeat-x;
+}
+
+/* -------- Content-Wrapper -------- */
+
+#content-wrapper {
+	background: url(../images/aqua/content-wrapper_bg.png) no-repeat -0.5px 0;
+}

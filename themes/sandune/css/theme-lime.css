@@ -1,0 +1,15 @@
+/* -------- Base -------- */
+
+html {
+	background: #b6e193 url(../images/lime/html_bg.png) repeat-y 50% 0;
+}
+
+body {
+	background: url(../images/lime/body_bg.png) repeat-x;
+}
+
+/* -------- Content-Wrapper -------- */
+
+#content-wrapper {
+	background: url(../images/lime/content-wrapper_bg.png) no-repeat -0.5px 0;
+}

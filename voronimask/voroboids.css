@@ -1,0 +1,66 @@
+
+body,html { height: 100%;}
+body { 
+background-color:#7a7a7a;
+background-image: -moz-radial-gradient(   50% 20%, circle closest-corner, #7a7a7a 15%,#121212 132%);
+background-image: -webkit-radial-gradient(50% 20%, circle closest-corner, #7a7a7a 15%,#121212 132%);
+background-image: -o-radial-gradient(     50% 20%, circle closest-corner, #7a7a7a 15%,#121212 132%);
+background-image: -ms-radial-gradient(    50% 20%, circle closest-corner, #7a7a7a 15%,#121212 132%);
+background-image: radial-gradient(        50% 20%, circle closest-corner, #7a7a7a 15%,#121212 132%);
+
+overflow-y: hidden;
+
+
+}
+svg {
+  display: block;
+ 
+  overflow: hidden;
+}
+
+path {
+  stroke: #000;
+  stroke-width: .5px;
+}
+
+circle {
+  fill: none;
+  stroke: #fff;
+}
+
+#vis > svg, pre { margin: 0 auto; }
+#sel { position:absolute; top: -170px; left: 0;}
+.color-0, .color-1, .color-2, .color-3 { color:transparent; }
+
+        .color-0::selection {
+          color: rgb(252, 254, 252);
+          background: rgb(252, 254, 252)
+        }
+        .color-0::-moz-selection {
+          color: rgb(252, 254, 252);
+          background: rgb(252, 254, 252)
+        }
+        .color-1::selection {
+          color: rgb(4, 2, 4);
+          background: rgb(4, 2, 4)
+        }
+        .color-1::-moz-selection {
+          color: rgb(4, 2, 4);
+          background: rgb(4, 2, 4)
+        }
+        .color-2::selection {
+          color: rgb(140, 50, 52);
+          background: rgb(140, 50, 52)
+        }
+        .color-2::-moz-selection {
+          color: rgb(140, 50, 52);
+          background: rgb(140, 50, 52)
+        }
+        .color-3::selection {
+          color: rgb(4, 154, 204);
+          background: rgb(4, 154, 204)
+        }
+        .color-3::-moz-selection {
+          color: rgb(4, 154, 204);
+          background: rgb(4, 154, 204)
+        }/*!!*/

@@ -1,0 +1,15 @@
+/* -------- Base -------- */
+
+html {
+	background: #FE8D65 url(../images/blush/html_bg.png) repeat-y 50% 0;
+}
+
+body {
+	background: url(../images/blush/body_bg.png) repeat-x;
+}
+
+/* -------- Content-Wrapper -------- */
+
+#content-wrapper {
+	background: url(../images/blush/content-wrapper_bg.png) no-repeat -0.5px 0;
+}

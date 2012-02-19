@@ -1,0 +1,25 @@
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+
+
+
+
+<h2 class="stuff">Welcum 2 fail.</h2>
+
+<script type="text/javascript">
+jQuery.getJSON('http://pipes.yahoo.com/pipes/pipe.run?_id=0vxHL0Lo3RGc2uL8pQt1Yg&_render=json&_callback=FailImages&callback=?');
+
+function FailImages(data){
+  var imgs = data.value.items;
+  if (imgs.length){
+    var url = imgs[Math.floor(Math.random()*imgs.length)].url;
+    jQuery('<img src="'+url+'">').insertAfter('h2:last');
+  }
+}
+</script>
+
+
+
+

@@ -1,0 +1,191 @@
+
+  <div id="container">
+    <p>View full post about <a href="http://paulirish.com/2009/browser-specific-css-hacks/">browser-specific CSS Hacks here.</a></p>
+   
+    <h1>Selector hacks</h1>
+    <div class="test" id="uno">Red if <code>* html</code> matches in this browser</div>
+    
+    <div class="test" id="dos">Red if <code>*:first-child+html </code> matches in this browser</div>
+    
+    <div class="test" id="tres">Red if <code>html>body</code> matches in this browser</div>
+    
+    <div class="test" id="cuatro">Red if <code>html>/**/body </code> matches in this browser</div>
+    
+    <div class="test" id="cinco">Red if <code>html:first-child</code> matches in this browser</div>
+    
+    <div class="test" id="seis">Red if <code>html[xmlns*=""] body:last-child</code> matches in this browser</div>
+    
+    <div class="test" id="siete">Red if <code>body:nth-of-type(1)</code> matches in this browser</div>
+    
+    <div class="test" id="sietepointfive">Red if <code>div:nth-of-type(1n)</code> matches in this browser</div>
+    
+
+    <div class="test" id="ocho">Red if <code>body:first-of-type</code> matches in this browser</div>
+    
+    <div class="test" id="diez">Red if <code>@media screen and (-webkit-min-device-pixel-ratio:0)</code> matches in this browser</div>
+  
+    
+    
+    <div class="test" id="trece">Red if <code>html[xmlns*=""]:root</code> matches in this browser</div>
+        
+    <div class="test" id="catorce">Red if <code>*|html[xmlns*=""]</code> matches in this browser</div>
+        
+    <div class="test" id="quince">Red if <code>:root *></code> matches in this browser</div>
+        
+    <div class="test" id="dieciocho">Red if <code>*+html</code> matches in this browser</div>
+    
+    
+
+
+    <div class="test" id="deiciseis">Red if <code>* ></code> matches in this browser</div>
+
+    <div class="test" id="nueve">Red if <code>html:only-child</code> matches in this browser</div>
+
+
+    <div class="test" id="veintitres">Red if <code>@media all and (min-width: 0px)</code> matches in this browser</div>
+    <div class="test" id="veintiuno">Red if <code>html:lang(en)>body </code> matches in this browser</div>
+    <div class="test" id="veintidos">Red if <code>body:nth-of-type(1)</code> matches in this browser</div>
+
+    <div class="test" id="veinticuatro">Red if <code> x:-moz-any-link</code> matches in this browser</div>
+    <div class="test" id="veinticinco">Red if <code> x:-moz-any-link, x:default</code> matches in this browser</div>
+
+
+           
+
+    
+    
+    <h1>Attribute hacks</h1>
+    
+    <div class="test" id="once">Blue if <code>div { _background: blue}</code> matches in this browser</div>
+    
+    <div class="test" id="doce">Blue if <code>div { *background: blue}</code> matches in this browser</div>
+    
+    <div class="test" id="veintiseis">Blue if <code>div { .background: blue}</code> matches in this browser</div>
+    
+
+    <div class="test" id="diecisiete">Blue if <code>div { background/**/: blue}</code> matches in this browser</div>
+    
+    <div class="test" id="diecinueve">Blue if <code>div { background: blue\9;}</code> matches in this browser</div>
+    
+    <div class="test" id="veinte">Blue if <code>div { background/*\**/: blue\9;}</code> matches in this browser</div>
+    
+    <div class="test" id="veintisiete">Blue if <code>div { background: blue !ie;}</code> matches in this browser</div>
+    
+    <!--
+    <div class="test" id="trece">Blue if <code>div { _background: blue}</code> matches in this browser</div>
+  -->
+    
+    
+    
+    
+  </div>
+
+<style type="text/css">
+
+/***** Selector Hacks ******/
+
+/* IE6 and below */
+* html #uno  { background: #FFDECE; border: 2px solid #ff0000 }
+
+/* IE7 */
+*:first-child+html #dos { background: #FFDECE; border: 2px solid #ff0000 } 
+
+/* IE7, FF, Saf, Opera  */
+html>body #tres { background: #FFDECE; border: 2px solid #ff0000 }
+
+/* IE8, FF, Saf, Opera (Everything but IE 6,7) */
+html>/**/body #cuatro { background: #FFDECE; border: 2px solid #ff0000 }
+
+/* Opera 9.27 and below, safari 2 */
+html:first-child #cinco { background: #FFDECE; border: 2px solid #ff0000 }
+
+/* Safari 2-3 */
+html[xmlns*=""] body:last-child #seis { background: #FFDECE; border: 2px solid #ff0000 }
+
+/* safari 3+, chrome 1+, opera9+, ff 3.5+ */
+body:nth-of-type(1) #siete { background: #FFDECE; border: 2px solid #ff0000 }
+
+
+/* safari 3+, chrome 1+, opera9+, ff 3.5+ */
+#sietepointfive:nth-of-type(1n) { background: #FFDECE; border: 2px solid #ff0000 }
+
+
+/* safari 3+, chrome 1+, opera9+, ff 3.5+ */
+body:first-of-type #ocho {  background: #FFDECE; border: 2px solid #ff0000 }
+
+/* saf3+, chrome1+ */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+ #diez  { background: #FFDECE; border: 2px solid #ff0000  }
+}
+
+
+/* Safari 2 - 3.1 */
+html[xmlns*=""]:root #trece  { background: #FFDECE; border: 2px solid #ff0000  }
+
+/* Safari 2 - 3.1, Opera 9.25 */
+*|html[xmlns*=""] #catorce { background: #FFDECE; border: 2px solid #ff0000  }
+
+/* Everything but IE6-8 */
+:root *> #quince { background: #FFDECE; border: 2px solid #ff0000  }
+
+/* IE7 */
+*+html #dieciocho {  background: #FFDECE; border: 2px solid #ff0000  }
+
+/* Opera 9+, Chrome2+, Saf4+, FF3.5+*/
+@media all and (min-width: 0px){
+  #veintitres{  background: #FFDECE; border: 2px solid #ff0000  }
+}
+
+/* Opera 9+, Chrome2+, Saf4+, FF3.0+*/
+/* assumes attribute/value on html tag */
+html:lang(en)>body  #veintiuno {  background: #FFDECE; border: 2px solid #ff0000  }
+
+/* Opera 9+, Chrome2+, Saf4+, FF3.5+*/
+body:nth-of-type(1) #veintidos {  background: #FFDECE; border: 2px solid #ff0000  }
+
+/* Firefox only. 1+ */
+#veinticuatro,  x:-moz-any-link  {  background: #FFDECE; border: 2px solid #ff0000  }
+
+/* Firefox 3.0+ */
+#veinticinco,  x:-moz-any-link, x:default  {  background: #FFDECE; border: 2px solid #ff0000  }
+
+
+
+
+/* unknown ---Hides from IE6--- */
+* > #dieciseis { background: #FFDECE; border: 2px solid #ff0000  }
+
+/* unknown */
+html:only-child #nueve { background: #FFDECE; border: 2px solid #ff0000  }
+
+
+/***** Attribute Hacks ******/
+
+/* IE6 */
+#once { _background: #C4D6FD;  _border: 2px solid #0000FF}
+
+/* IE6, IE7 */
+#doce { *background: #C4D6FD;  *border: 2px solid #0000FF}
+
+/* IE6, IE7 */
+#veintiseis { .background: #C4D6FD;  .border: 2px solid #0000FF}
+
+/* Everything but IE6 */
+#diecisiete { background /**/: #C4D6FD;  border /**/: 2px solid #0000FF}
+
+/* IE6, IE7, IE8 */
+#diecinueve { background : #C4D6FD\9;  border : 2px solid #0000FF\9;}
+
+/* IE7, IE8 */
+#veinte { background /*\**/: #C4D6FD\9;  border /*\**/: 2px solid #0000FF\9}
+
+
+/* IE6, IE7 -- acts as an !important */
+/* string after ! can be anything */
+#veintisiete { background: #C4D6FD !ie;  border: 2px solid #0000FF !ie; } 
+
+
+#container { font-family: calibri,geneva, arial}
+.test { margin: 4px; width: 500px; padding: 2px; }
+
+</style>

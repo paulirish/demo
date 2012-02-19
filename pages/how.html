@@ -1,0 +1,99 @@
+<h3>How to manage the website</h3>
+<ul>
+	<li style="list-style-type: none;">
+		<textarea>/* -------- Website -------- */
+
+name: My Website Title
+theme: awesome-blue
+missing: 404.html
+foo: bar</textarea>
+	</li>
+	<li>
+		To name your site, have a line that says name: Your Site Name
+	</li>
+	<li>
+		To give your site a specific theme, have a line that says theme: theme-foldername
+	</li>
+	<li>
+		To give your site a specific template, have a line that says template: template-filename
+	</li>
+	<li>
+		To give your site a custom 404 page, have a line that says 404: url
+	</li>
+	<li>
+		To give your site any other properties, have a line that says anything: whatever-you-want
+	</li>
+	<li>
+		For readability sake, please use lowercase and no spaces when applicable
+	</li>
+</ul>
+<h3>How to manage the sitemap</h3>
+<ul>
+	<li style="list-style-type: none;">
+		<textarea>/* -------- Sitemap -------- */
+
+Welcome
+Second Page
+	Child of Second
+	Second Child of Second
+		Child of Second Child of Second
+	Third Child of Second
+	Fourth Child of Second [hidden]
+Third Page</textarea>
+	</li>
+	<li>
+		To give your page a specific url, add [url:the-url-you-want]
+	</li>
+	<li>
+		To give your page a specific theme, add [theme:theme-foldername]
+	</li>
+	<li>
+		To give your page a specific template, add [template:template-filename]
+	</li>
+	<li>
+		To make your page hidden in the navigation, add [hidden]
+	</li>
+	<li>
+		To give your page any other properties, add [anything:whatever-you-want]
+	</li>
+	<li>
+		To create a child page use a tab
+	</li>
+	<li>
+		Remember, child pages inherit the parent page's remaining preferences followed by the site's remaining preferences.
+	</li>
+	<li>
+		For readability sake, please use lowercase and no spaces when applicable
+	</li>
+</ul>
+<h3>How to manage pages</h3>
+<ul>
+	<li>
+		To include functionality tags into your page, use a comment tag like &lt;!-- FUNCTIONALITY --&gt; or just &#35;&#35;FUNCTIONALITY&#35;&#35;.
+		Anything between &lt;!-- BEGIN:FUNCTIONALITY --&gt; and &lt;!-- END:FUNCTIONALITY --&gt; or &#35;&#35;BEGIN:FUNCTIONALITY&#35;&#35; and &#35;&#35;END:FUNCTIONALITY&#35;&#35; will be removed before display.  None of this is case sensative.
+	</li>
+	<li>
+		To include a sitemap, use <strong>NAVIGATION-SITEMAP</strong>.  Examples might include &lt;!-- NAVIGATION-SITEMAP --&gt;, &#35;&#35;NAVIGATION-SITEMAP&#35;&#35;, &#35;&#35;BEGIN-NAVIGATION-SITEMAP&#35;&#35;This will not be displayed.&#35;&#35;END-NAVIGATION-SITEMAP&#35;&#35;.
+	</li>
+	<li>
+		To include root navigation, use <strong>NAVIGATION-ROOT</strong>.
+	</li>
+	<li>
+		To include sibling navigation, use <strong>NAVIGATION-SIBLINGS</strong>.
+	</li>
+	<li>
+		To include child navigation, use <strong>NAVIGATION-CHILDREN</strong>.
+	</li>
+	<li>
+		To include the web site title, use <strong>SITE-NAME</strong>.
+	</li>
+	<li>
+		To include the page title, use <strong>NAME</strong>.
+	</li>
+	<li>
+		To include any other page attributes, use <strong>*</strong> where * represents the attribute.  Examples might include &#35;&#35;THEME&#35;&#35;, &#35;&#35;COLOR-SCHEME&#35;&#35;.
+	</li>
+	<li>
+		To include any other site attributes, use <strong>SITE-*</strong> where * represents the attribute.
+	</li>
+</ul>

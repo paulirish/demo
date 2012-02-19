@@ -1,0 +1,68 @@
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+
+<h3><a href="http://paulirish.com/2009/log-a-lightweight-wrapper-for-consolelog/">View the full post about log() here</a></h3>
+
+
+
+
+<p>
+  <a href="javascript:testlog()">Test log()</a>
+</p>
+
+
+<p>
+  <a href="javascript:testlogargs()">Test logargs()</a>
+</p>
+
+<p>
+  <a href='javascript:if(!window.firebug){window.firebug=document.createElement("script");firebug.setAttribute("src","http://getfirebug.com/releases/lite/1.2/firebug-lite-compressed.js");document.body.appendChild(firebug);(function(){if(window.firebug.version){firebug.init()}else{setTimeout(arguments.callee)}})();void (firebug);if(window.log){(function(){if(window.firebug&&window.firebug.version){for(var a=0;a<log.history.length;a++){console.log(log.history[a])}}else{setTimeout(arguments.callee,100)}})()}};'>Load firebug lite, flush history</a>
+</p>
+
+<script>
+
+ 
+window.log = function(){
+ 
+  // store logs to an array for reference
+  log.history = log.history || [];
+  log.history.push(arguments);
+ 
+  window.console && console.log[console.firebug ? 
+    'apply' : 'call'](console,Array.prototype.slice.call(arguments));
+}
+ 
+// logargs(this); == console.log(this,arguments);
+window.logargs = function(context){
+  // grab the calling functions arguments
+  log(context,arguments.callee.caller.arguments); 
+}
+
+
+
+function testlog(){
+// testing
+  a = 1;
+  b = 'str';
+  c = { foo: 1 };
+  d = false;
+  e = [ 3, 4, 5 ];
+  
+  
+  log( a );
+  log( b );
+  log( c );
+  log( d );
+  log( e );
+  log( a, b, c, d, e );
+  log( a, b, c, d, e, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 );
+}
+
+// test logargs
+function testlogargs(){
+  $('<div/>').load('/demo/',function(){
+    log('calling logargs to see all my arguments');
+    logargs(this);  
+  });
+}
+
+</script>
