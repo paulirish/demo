@@ -33,13 +33,16 @@ var CanvasDrawr = function(options) {
         },
 
         preDraw: function(event) {
+
             $.each(event.touches, function(i, touch) {
               
-                var id = touch.identifier;
+                var id      = touch.identifier, 
+                    colors  = ["red", "green", "yellow", "blue", "magenta", "orangered"],
+                    mycolor = colors[Math.floor(Math.random() * colors.length)];
               
                 lines[id] = { x     : this.pageX - offset.left, 
                               y     : this.pageY - offset.top, 
-                              color : options.color || ["red", "green", "yellow", "blue", "magenta", "orangered"][Math.floor(Math.random() * 6)] 
+                              color : mycolor
                            };
             });
 
