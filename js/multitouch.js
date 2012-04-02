@@ -83,5 +83,5 @@ var CanvasDrawr = function(options) {
 
 
 $(function(){
-  var super_awesome_multitouch_drawing_canvas_thingy = new CanvasDrawr({id:"example", size: 5 }); 
+  var super_awesome_multitouch_drawing_canvas_thingy = new CanvasDrawr({id:"example", size: 15 }); 
 });
