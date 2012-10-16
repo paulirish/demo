@@ -195,3 +195,23 @@ body.blue {
 #color-schemes a.selected {
 	text-decoration: underline;
 }
+
+
+
+
+#navigation, #banner { 
+    overflow: hidden;
+    max-height: 120px; max-width: 100%;
+  -webkit-transition: all 0.5s ease-out; 
+     -moz-transition: all 0.5s ease-out; 
+       -o-transition: all 0.5s ease-out; 
+          transition: all 0.5s ease-out; 
+}
+
+
+@media screen and (max-width: 780px) {
+
+    #navigation, #banner { max-height: 0; max-width: 0; }
+    #wrapper, canvas { max-width: 100%; }
+}
+
